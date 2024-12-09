@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -316,3 +317,323 @@
     
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>فرضيات</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- External Stylesheets -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/light-box.css">
+    <link rel="stylesheet" href="css/templatemo-main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <style>
+        /* Main container for the page */
+        .page-wrapper {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center horizontally */
+            justify-content: flex-start; /* Align items to the top */
+            position: relative;
+            margin-top: 0px; /* Space from the top */
+            margin-right: 30px; /* Space from the right edge */
+            z-index: 1; /* Ensure it is on top */
+        }
+
+        /* Style for the title */
+        .page-wrapper > div:first-child {
+            text-align: center; /* Center align the title */
+            margin-bottom: 30px; /* Add space below the title */
+        }
+
+        .hypothesis-title {
+            margin-top: 20px;
+            color: #a68731; /* Golden text color */
+        }
+
+        /* Style for the container holding rectangles */
+        .rectangles-container {
+            display: flex;
+            justify-content: center; /* Center rectangles horizontally */
+            gap: 20px; /* Space between rectangles */
+            margin-top: 40px; /* Space from the top */
+        }
+/* Individual rectangle styles */
+.rectangle {
+    background: linear-gradient(to bottom right, #000000, #123466); /* Gradient background */
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    align-items: center; /* Center text vertically */
+    justify-content: flex-start; /* Align text to top */
+    padding: 10px 20px 10px 20px; /* زيادة padding قليلاً */
+    text-align: center; /* Center align content */
+    border-radius: 15px; /* Rounded corners */
+    width: 350px; /* زيادة العرض إلى 350px */
+    height: auto; /* Adjust height based on content */
+    color: white; /* White text */
+    position: relative;
+    z-index: 100; /* Ensure rectangles are above other elements */
+}
+
+/* Icon inside the rectangle */
+.rectangle i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 40px; /* حجم الأيقونة أكبر */
+    color: darkred; /* Dark red icon color */
+}
+
+/* Style for the text inside the rectangle */
+.rectangle h3 {
+    font-size: 18px; /* تقليل حجم النص الرئيسي */
+    margin-top: 30px; /* زيادة المسافة بين الأيقونة والنص */
+}
+
+.rectangle h4 {
+    font-size: 14px; /* تقليل حجم النص الفرعي */
+    margin-top: 10px; /* إضافة مسافة بين العنوان والنص */
+    line-height: 1.5; /* زيادة المسافة بين الأسطر */
+}
+
+
+        /* Button container at the bottom-left */
+        .buttons-container {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        /* Style for buttons */
+        .button-change,
+        .button-save {
+            background-color: #a68731; /* Golden button color */
+            color: #123466; /* Blue text color */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Add padding */
+            margin-right: 10px; /* Space between buttons */
+            border-radius: 30px; /* Rounded corners */
+            font-size: 16px; /* Medium font size */
+            width: 150px; /* Fixed button width */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+
+        .button-save {
+            margin-right: 0; /* Remove right margin for the last button */
+        }
+
+        /* Hover effect for buttons */
+        .button-change:hover,
+        .button-save:hover {
+            background-color: #8f6c29; /* Darker golden shade on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="sequence">
+        <div class="seq-preloader"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+   <nav id="navbar">
+        <div class="logo" id="logo">
+            <img src="img/BurhanWhiteLogo.png" alt="Burhan Logo">
+        </div>
+        <ul>
+            <li><a href="home.html"><i class="fa fa-home"></i> الرئيسية</a></li>
+            <li><a href="newCase.html" class="active"><i class="fa fa-file"></i> قضية جديدة</a></li>
+            <li><a href="#archive"><i class="fa fa-archive"></i> الأرشيف</a></li>
+            <li><a href="#settings"><i class="fa fa-cog"></i> الإعدادات</a></li>
+            <li><a href="#logout"><i class="fa fa-sign-out"></i> تسجيل الخروج</a></li>
+            <li><a href="#help"><i class="fa fa-question-circle"></i> مساعدة</a></li>
+        </ul>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="profile-container">
+        <div class="background-lines"></div>
+        <div class="profile-card">
+            <img src="img/AhmedImage.png" alt="أحمد الحربي" class="profile-img">
+            <div class="profile-text">
+                <h2>أحمد الحربي</h2>
+                <p>محقق</p>
+            </div>
+        </div>
+    </div>
+    <div class="fullwidth">       
+        <div class="container separator">
+      
+    
+          <ul class="progress-tracker progress-tracker--text progress-tracker--center">
+            <li class="progress-step is-complete">
+              <div class="progress-marker">1</div>
+              <div class="progress-text">
+                <h4 class="progress-title">تحميل</h4>
+                
+              </div>
+            </li>
+    
+            <li class="progress-step is-complete">
+              <div class="progress-marker">2</div>
+              <div class="progress-text">
+                <h4 class="progress-title">تحليل</h4>
+                
+              </div>
+            </li>
+    
+            <li class="progress-step is-active" aria-current="step">
+              <div class="progress-marker">3</div>
+              <div class="progress-text">
+                <h4 class="progress-title">فرضيات</h4>
+              </div>
+            </li>
+        
+        </div>
+      </div>
+     
+    <!-- Hypotheses Section -->
+    <div class="page-wrapper">
+      
+        <div class="rectangles-container">
+            <!-- Rectangle 1 -->
+            <div class="rectangle">
+                <i class="fa fa-quote-left"></i>
+                <div>
+                    <h3>عملية سطو انتهت بشكل خاطئ:</h3>
+                    <h4> الفوضى المنتشرة في المكان قد تشير إلى وجود شجار، ربما خلال محاولة سطو أو سرقة. ربما تعرض السارق للمواجهة من قبل الضحية، مما أدى إلى وقوع اشتباك جسدي انتهى بجريمة قتل .</h4>
+                </div>
+            </div>
+
+            <!-- Rectangle 2 -->
+            <div class="rectangle">
+                <i class="fa fa-quote-left"></i>
+                <div>
+                    <h3>وفاة عرضية خلال شجار:</h3>
+                     <h4>قد يكون المشهد نتيجة نزاع عائلي أو شجار تصاعد إلى حد حدوث إصابة قاتلة. الفوضى على الأرض ووجود أدلة ربما تكون دماء تشير إلى مواجهة استُخدم فيها جسم ما كسلاح، أو أن أحد الأطراف سقط وأصيب بجروح قاتلة.</h4>
+                </div>
+            </div>
+
+            <!-- Rectangle 3 -->
+            <div class="rectangle">
+                <i class="fa fa-quote-left"></i>
+                <div>
+                    <h3>مسرح جريمة مفبرك:</h3>
+                    <h4>من الممكن أيضًا أن يكون المشهد مفبركًا بهدف تضليل المحققين. الفوضى والأدلة الموضوعة قد تكون لترتيب المسرح بشكل يوحي بوقوع جريمة عنيفة، بينما في الواقع قد يكون الحادث نتيجة سبب آخر مثل جرعة زائدة من المخدرات أو إصابة عرضية، وتم التلاعب بالمسرح لإخفاء السبب الحقيقي للوفاة.</h4>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Analyis-btn-container">
+        
+        <button class="Analyis-btn">تغيير</button>
+        <button class="Analyis-btn">حفظ</button>
+
+        <div class="Analyis-btn-container-right">
+            <button class="Analyis-btn"  onclick="window.location.href='Upload.html'">السابق</button>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+
+    
+  <script type="text/javascript">
+    $(document).ready(function() {
+    
+        
+    
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+   
+  
+    // الحصول على العناصر اللازمة
+    const navbar = document.getElementById('navbar');
+    const logo = document.getElementById('logo');
+    
+    // إضافة حدث عند الضغط على الشعار
+    logo.addEventListener('click', function() {
+    // التبديل بين إظهار وإخفاء النافبار مع الترانزكشن
+    if (navbar.style.right === "0px" || navbar.style.right === "") {
+        navbar.style.right = "-15%"; // إخفاء النافبار بهدوء
+    } else {
+        navbar.style.right = "0"; // إظهار النافبار بهدوء
+    }
+    });
+    
+    // عند تحريك الماوس في المكان المحدد
+    document.body.addEventListener('mousemove', (event) => {
+    const threshold = 50; // المسافة التي تظهر النافبار عندها من الحافة
+    if (event.clientX > window.innerWidth - threshold && navbar.style.right === "-15%") {
+        navbar.style.right = "0"; // إظهار النافبار إذا كانت مخفية
+    } 
+    });
+    
+    
+        $(document).ready(function() {
+            $('.scroll-link').on('click', function(event) {
+                event.preventDefault();
+                var sectionID = $(this).attr("data-id");
+                $('html, body').animate({
+                    scrollTop: $("#" + sectionID).offset().top - 80
+                }, 1500);
+            });
+        });
+    </script>
+    
+</body>
+</html>
+>>>>>>> 4401f5c (first commit)

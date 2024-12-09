@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,3 +136,142 @@
   </div>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Background</title>
+  <!-- استيراد خط Almarai -->
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Almarai', sans-serif; 
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      overflow: hidden;
+      color: #f5f5dc; 
+    }
+
+    /* Video Background */
+    .video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Overlay Effect */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8); /* Dark overlay for better text readability */
+      z-index: 1;
+    }
+
+    /* Content Styling */
+    .container {
+      position: relative;
+      text-align: center;
+      z-index: 2;
+      margin-top: -2%; /* Adjust positioning */
+    }
+
+    .container img {
+      opacity: 0.5;
+      max-width: 350px; /* Adjust image size */
+      margin-bottom: 1rem; /* Add spacing below the image */
+    }
+
+    .container h1 {
+      font-size: 3rem;
+      margin-bottom: 4rem; /* Add spacing below the text */
+      animation: slideIn 2s ease-out;
+    }
+
+    .btn {
+      padding: 1rem 3rem;
+      background-color: #8d6e3a;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      z-index: 3;
+      animation: fadeIn 2s ease-out 2s;
+    }
+
+    .btn:hover {
+      background-color: #A18842; 
+      transform: scale(1.1);
+    }
+
+    /* Keyframes for animations */
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px); /* Start above the view */
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0); /* Settle into position */
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Video Effects */
+    .video-bg:hover {
+      filter: brightness(1.2);
+      transform: scale(1.02);
+      transition: all 0.5s ease-in-out;
+    }
+
+    .btn:active {
+      transform: scale(0.9);
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Background -->
+  <video class="video-bg" autoplay loop>
+    <source src="img/vb.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Content -->
+  <div class="container">
+    <img src="img/burhan.png" alt="Burhan"> 
+    <h1>مرحبًا بك حيث تبدأ الجريمة وتنتهي بالعدالة</h1>
+    <button class="btn" onclick="window.location.href='log in.html'">ابدأ الآن</button>
+  </div>
+</body>
+</html>
+>>>>>>> 4401f5c (first commit)
