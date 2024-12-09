@@ -284,13 +284,11 @@
     
     </div>
   </div>
- 
-
   <div class="box">
     <form action="#" id="sendForm">
-        <div id="drop-area">
+        <div id="drop-area"> <!-- إظهار الـ drop-area بشكل افتراضي -->
             <label for="fileElem">
-                <input type="file" name="News[image]" id="fileElem" onchange="handleFiles(this.files)">
+                <input type="file" name="News[image]" id="fileElem" onchange="handleFiles(this.files)" accept=".zip,.rar,.tar,.gz">
                 <div class="uploadIcon">
                     <i class="fa fa-upload fa-4x" aria-hidden="true"></i>
                 </div>
@@ -423,7 +421,8 @@ if (event.clientX > window.innerWidth - threshold && navbar.style.right === "-15
 
     </script>
 
-    <script>
+    
+<script>
     var dropArea = document.getElementById("drop-area");
     var fileElem = document.getElementById('fileElem');
     var gallery = document.getElementById('gallery');
